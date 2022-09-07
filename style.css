@@ -1,0 +1,104 @@
+html{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+body{
+    background-image: url("./images/main-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row{
+    display: grid;
+    
+}
+
+.col{
+    display: flex;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    font-size: 16px;
+    font-family: 'Red Hat Display';
+    align-items: center;
+    flex-wrap: nowrap;
+   
+}
+
+.card-title{
+    font-weight: 900;
+}
+
+.card-text{
+    font-weight: 500;
+    color: gray;
+}
+
+.jumbotron{
+    display: flex;
+    background-color: hsla(225, 100%, 94%, 0.3) !important;
+    border-radius: 15px;
+}
+
+#mid-col{
+    line-height: 1em;
+    min-height:min-content;
+}
+
+
+#change-link{
+    padding-left: 1em;
+    transition: color 1ms ease-out;
+}
+#change-link:hover
+{
+    color:blue;
+}
+
+
+#jumbo-row{
+    display: flex;
+}
+
+#payment{
+    transition: box-shadow 0.5s;
+    box-shadow: 5px 5px 5px hsl(224, 23%, 55%);
+    margin-top: 1.5em;
+    transition: font-size 0.5s;
+}
+ 
+
+#payment:hover{
+ font-size: 1.2rem;
+ box-shadow: 10px 10px 5px hsl(224, 23%, 55%);
+ overflow: visible;
+}
+
+#footer-card{
+    gap: 1em;
+}
+
+
+#cancel:hover{
+    color: crimson;
+}
+
+@media only screen and (max-width: 375px) {
+
+    body{
+        background-image: url("./images/pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        position:fixed !important; 
+
+    }
+    
+    .container{
+        overflow: scroll !important;
+    }
+}
